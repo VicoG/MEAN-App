@@ -1,0 +1,31 @@
+<div id = 'volcano'>
+
+	<div ng-controller = 'volcanoController'>
+
+		<div id = 'header'>
+			<a href="#/">Home</a> | <a href="#/snowStore"> Snow Survival - Mini Mart</a> |  <a href="#/volcanoHome"> Rent-A-Volcano Home</a> | <a href="#/volcanoList">Volcano Selection</a>  
+		</div>
+		<div id='tableV'>
+
+<!-- 		<ul>
+			<li ng-repeat = "volcano in volcanos | filter:filter_name"><img ng-src='{{volcano.img}}'/>, {{volcano.name}}, {{volcano.price}}, <button ng-click="showDetails()">More Information</button></li>
+		</ul> -->
+		<table style="width:80%">
+		  <tr>
+		    <td><strong>View</strong></td>
+		    <td><strong>Property Name</strong></td> 
+		    <td><strong>Price/year</strong></td>
+		    <td><strong>More Information</strong></td>
+		  </tr>
+		  <tr ng-repeat = "volcano in volcanos">
+		    <td><img ng-src='{{volcano.img}}' alt="Volcano" style="width:70px;height:50px;"/></td>
+		    <td>{{volcano.name}}</td> 
+		    <td>{{volcano.price}}</td>
+		    <td><button id = 'mi' ng-click="showDetails(volcano)">More Information</button></td>
+		  </tr>
+		</table>
+
+		</div>
+
+	</div>
+</div>

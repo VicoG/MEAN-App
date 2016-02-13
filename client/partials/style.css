@@ -1,0 +1,314 @@
+body{
+    font-family: "Georgia", serif;
+}
+
+/*Home Screen*/
+#homeHeader{
+  height: 10em;
+ 
+}
+#homeHeader h1{
+  height: 10em;
+  font-family: 'Gravitas One', cursive;
+  font-size: 7em;
+}
+#homeHeaderLeft{
+  height: 10em;
+  background-color: #1a75ff;
+  color:white;
+  width: 32%;
+  text-align: right;
+  display: inline-block;
+  padding-left: 1%;
+}
+
+
+#homeHeaderRight{
+  color:#0066ff;
+  width: 67%;
+  display: inline-block;
+}
+#center{
+  height: 36em;
+  background-color: #f1e7da;
+}
+#leftBox{
+  height: 75%;
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 5%;
+  display: inline-block;
+  background-image: url("../images/snow.jpeg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  background-color: blue;
+  border-radius: 25px;
+}
+#rightBox{
+  height: 75%;
+  width: 40%;
+  margin-left: 5%;
+  display: inline-block;
+  background-image: url("../images/V.jpeg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-color: blue;
+  border-radius: 25px;
+}
+#leftBox a{
+  color: white;
+}
+#rightBox a{
+  color: white;
+}
+#leftBox h2{
+  font-size: 2em;
+  text-align: center;
+}
+#rightBox h2{
+  font-size: 2em;
+  text-align: center;
+}
+
+
+/*volcano page*/
+#header{
+  font-family: "Georgia", serif;
+	height: 11%;
+	width: 99%;
+	position: absolute;
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: .8em;
+	color:  #ffffff;
+  text-shadow: .1em .1em .3em red;
+  background-color: #ffd633;
+  box-shadow: .5em .5em .9em grey;
+  margin: 0 auto;
+}
+
+#header a{
+	text-decoration: none;
+	color:  #ffffff;
+}
+
+#header a:hover {
+    color: #ff33ff;
+}
+
+/*volcano home page*/
+#volcano{
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    background-color: orange;
+}
+#homeScreen{
+    padding: 3.5em 10% 2%;
+    text-align: center;
+    font-size: 3.6em;
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+#enter{
+    width: 8em;
+    height:2.5em;
+    border-radius: 1.5em;
+    background-color: green;
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+    margin-left: 43%;
+}
+
+/*table page*/
+#tableV{
+    padding-top: 7em;
+    font-family: "Georgia", serif;
+}
+table{
+	margin: 0 auto;
+}
+#tableV td {
+    padding: .5em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    height: 3em;
+    font-size: 2em;
+    color: white;
+}
+/*tr:nth-child(even) {background-color: #f2f2f2}
+*/
+#tableV tr:hover {
+    background-color: #ff9933;
+    color: black;
+}
+
+#mi{
+    background-color: green;
+    color: white;
+    height: 3em;
+    width: 16em;
+    border-radius: 1em;
+    font-size: .6em;
+}
+/*rent page*/
+#rent{
+    padding-top: 2.1em;
+    width: 50%;
+    font-size: 2.1em;
+    text-align: center;
+    color: white;
+  text-shadow: .1em .1em .3em red;
+    margin-left: 25%;
+}
+#blockOne{
+     margin-top: 5em;
+     margin-bottom: 2em;
+}
+.block{
+    height: 10%;
+}
+.block button{
+  margin-bottom: 6em;
+}
+#rentTable table{
+    width: 45%;
+    padding-top: 10em;
+}
+#rentTable tr{
+    display: block;
+}
+
+/*Popup*/
+.ng-modal-overlay {
+  /* A dark translucent div that covers the whole screen */
+  margin-top: 15%;
+  position:absolute;
+  z-index:9999;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#000000;
+  opacity: 0.8;
+}
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  margin-top: 15%;
+  z-index:10000;
+  position: absolute;
+  width: 50%; /* Default */
+  /* Center the dialog */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+}
+.ng-modal-dialog-content {
+  background-image: url("../images/rabbit.gif");
+  background-repeat: no-repeat;
+  background-position: right left;
+  padding:100px;
+  font-size: 100px;
+  text-align: center;
+}
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'arial', 'sans-serif';
+}
+
+/*Snow Store*/
+
+#snowLabel{
+  font-size: 1em;
+}
+#headerSnow{
+  text-align: center;
+  height: 3em;
+  color:  #ffffff;
+  padding-top: .5em;
+  font-family: "Georgia", serif;
+  width: 99%;
+  font-size: 2em;
+/*  text-shadow: 2px 2px 5px green;
+*/  background-color: #fff7e5;
+  box-shadow: 10px 10px 5px #e69900;
+  margin: 0 auto;
+}
+
+#headerSnow a{
+  text-decoration: none;
+  color:  #996600;
+}
+#headerSnow a:hover{
+  color: red;
+}
+#snowHomeScreen{
+  height: 50em;
+  width: 100%;
+    background-image: url("../images/catgif.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+/*#enter2{
+    width: 9em;
+    height:3em;
+    border-radius: 1.5em;
+    background-color: green;
+    color: white;
+    font-size: 2.7em;
+    margin-right: 2%;
+}
+*/
+
+#delete{
+  background-color: red;
+  color: white;
+  border-radius: .5em;
+}
+#add{
+  background-color: green;
+  color: white;
+  border-radius: .8em;
+}
+#orderform{
+  font-size: 1.3em;
+  color: black
+}
+
+#orderform td {
+    padding: 1em;
+    text-align: left;
+/*    border-bottom: 1px solid #ddd;
+    height: 50px;*/
+    font-size: 2.2em;
+    color: black;
+}
+#footer{
+  height: 8em;
+  padding-top: .8em;
+  width: 100%;
+  background-color: #fff7e5;
+  margin: 0 auto;
+}
+
+
+
+

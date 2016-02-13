@@ -1,0 +1,37 @@
+
+<div ng-controller='customerController'>
+
+  <div id = 'headerSnow'>
+    <h3><a href="#/">Home</a> | <a href="#/snowStore"> Snow Survival - Mini Mart</a> | <a href="#/partials"> Orders</a>  | <a href="#/partial2">Customers</a></h3>
+  </div>
+
+    <div class="container">
+      <h3>Add a new customer</h3>
+      <form>
+        Name: <input type='text' ng-model='newStudent.name'>
+        <input id = 'add'type='submit' value='Add new Customer' ng-click='addStudent()'>
+      </form><br><br> 
+
+    </div>
+    <div class="container">          
+      <table class="table table-striped">
+        Search: <input type="text" ng-model="filter_name">
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Created At</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="student in students| filter:filter_name | orderBy:name">
+            <td ng-bind = 'student.name'> </td>
+            <td ng-bind = 'student.date | date:"longDate"'></td>
+            <!-- a href="#/partials/{{student._id}}" -->
+            <td><input id = 'delete' type='submit' value='Delete' ng-click='removeCustomer(student._id)'></td>
+          </tr>
+        </tbody>
+       </table>
+      </div>
+     
+</div>

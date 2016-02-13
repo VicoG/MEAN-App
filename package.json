@@ -1,0 +1,10 @@
+{
+  "name": "MEAN_App",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.2.0",
+    "mongoose": "^4.1.1",
+    "body-parser": "^1.13.1",
+    "ngModal": "~1.2.0"
+  }
+}

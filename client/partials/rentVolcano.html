@@ -1,0 +1,46 @@
+<div id = 'volcano'>
+
+<div ng-controller = 'rentVolcanoController'>
+
+
+<div ng-repeat = 'volcano in volcanos'>
+
+	<div id = 'header'>
+		<a href="#/">Home</a> | <a href="#/snowStore"> Snow Survival - Mini Mart</a> |  <a href="#/volcanoHome"> Rent-A-Volcano Home</a> | <a href="#/volcanoList">Volcano Selection</a>  
+	</div>
+	<div id = 'rent'>
+
+		<div id = 'blockOne'class = 'block'>
+			<h1 style = 'text-decoration:underline'>{{volcano.name}}</h1>
+
+		</div>
+		<div  class = 'block'>
+			<img ng-src='{{volcano.img}}' alt="Volcano" style="width:300px;height:250px;"/>
+
+		</div>
+		
+		<div class = 'block'>
+			<h3>{{volcano.description}}</h3>
+
+		</div>	
+		<div class = 'block'>
+			<h1>{{volcano.price}}</h1>
+
+		</div>
+		<div class = 'block'>
+			{{volcano.features}}
+		<modal-dialog show='modalShown' width='90%' height='90%'>
+		<p>Silly Rabbit... you can't rent a volcano!!<p>
+		</modal-dialog>
+
+		</div>
+		<div class = 'block'>
+			<br><button id ='mi' ng-click='toggleModal()'>Rent</button>
+
+		</div>
+
+
+
+	</div>
+</div>
+</div>

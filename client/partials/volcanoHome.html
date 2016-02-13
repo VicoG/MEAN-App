@@ -1,0 +1,41 @@
+<div id = 'volcano'>
+
+  <div ng-controller='volcanoController'>
+
+  <div id = 'header'>
+    <a href="#/">Home</a> | <a href="#/snowStore"> Snow Survival - Mini Mart</a> |  <a href="#/volcanoHome"> Rent-A-Volcano Home</a> | <a href="#/volcanoList">Volcano Selection</a>  
+  </div>
+    <div id = 'homeScreen'>
+      <h1>Frustrated evil genius?</h1>
+      <h1>Noisy neighbors constantly distracting you from your evil plans?</h1>
+      <h1>Astronomical rents in the city limiting your options?</h1>
+      <h1>Now there’s a solution!</h1>
+      <h1><strong>Rent-A-Volcano</strong></h1>
+
+
+
+    </div>
+<!-- volcano -->
+       <div class="container">
+        <h3>Add a new volano</h3>
+        <form>
+          Img: <input type='text' ng-model='newVolcano.img'><br>
+          Name: <input type='text' ng-model='newVolcano.name'><br>
+          Description: <input type='text' ng-model='newVolcano.description'><br>
+          Price: <input type='text' ng-model='newVolcano.price'><br>
+          Features: <input type='text' ng-model='newVolcano.features'><br>
+
+
+
+          <input type='submit' value='Add new Volcano' ng-click='addStudent()'>
+        </form><br><br> 
+<!-- volcano -->
+      </div>
+  	<button id = 'enter' ng-click="go('/volcanoList')" >Enter</button>
+
+  </div>
+</div>
+
+
+
+    

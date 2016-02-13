@@ -1,0 +1,55 @@
+
+
+<div ng-controller='ordersController'>
+
+  <div id = 'headerSnow'>
+    <h3><a href="#/">Home</a> | <a href="#/snowStore"> Snow Survival - Mini Mart</a> | <a href="#/partials"> Orders</a>  | <a href="#/partial2">Customers</a></h3>
+  </div>
+
+    <div class="container">
+      <h2 id = 'title'>Add a new Order:</h2>
+      <form id = 'orderform'>
+    		Name   <select ng-model='newStudent.name' ng-options= " student.name as student.name for student in students"> 
+              </select><br> <br>       
+        Product    <select ng-model='newStudent.product'> 
+            <option value="Shovel">Shovel</option>
+            <option value="Salt">Salt</option>
+            <option value="Ice Scraper">Ice Scraper</option>
+            <option value="Snow Blower">Snow Blower</option>
+          </select>
+        Quantity    <select ng-model='newStudent.quantity'> 
+            <option value="1" >1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+          </select>
+
+        <input id = 'add' type='submit' value='Order' ng-click='addOrder()'>
+      </form><br><br> 
+
+    </div>
+    <div class="container">          
+      <table class="table table-striped">
+        Search: <input type="text" ng-model="filter_name">
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in orders| filter:filter_name | orderBy:name">
+            <td ng-bind='item.name'></td>
+            <td ng-bind='item.product'></td>
+            <td ng-bind=' item.quantity'></td>
+            <td ng-bind=' item.date | date:"longDate"'></td>
+            <td><input id = 'delete' type='submit' value='Delete' ng-click='removeOrder(item._id)'></td>
+
+          </tr>
+        </tbody>
+       </table>
+      </div>
+      <div id = 'footer'></div>
+     
+  </div>
